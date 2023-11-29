@@ -8,6 +8,7 @@ print(type(name))
 print(type(age))
 print(type(decimal))
 
+
 #TYPE function shows the class of the code, whether its a str, int, etc
 
 print(5 + 7) #Add
@@ -21,6 +22,7 @@ print(5 * 7) #Multiply
 math = 5 + 8
 print(math)
 
+
 #You can set variables to equations and then combine the equations into another variable for an outcome
 
 add = 5 + 10
@@ -28,6 +30,16 @@ home = 1000
 test = 5 / 7
 
 print(add - home * test)
+
+
+# Using += to add to an variable
+
+x = 10 # Initialize a variable
+
+x += 5 # Use the += operator to add a value to the variable
+
+print(x)  # Output: 15
+
 
 #Lab using math
 
