@@ -11,7 +11,7 @@ for i in message:
 
 print(count)
 
-# How to isspace and isalpha
+# How to use isspace and isalpha
 
 count = 0
 message = 'This is a test'
@@ -23,3 +23,5 @@ for i in message:
         count += 1
 
 print(count)
+
+# Both codes do the same thing
