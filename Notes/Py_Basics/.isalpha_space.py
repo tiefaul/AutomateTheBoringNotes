@@ -1,4 +1,4 @@
-# How to print out character count including 
+# How to print out character count including " " (Spaces)
 
 count = 0
 message = 'This is a test'
