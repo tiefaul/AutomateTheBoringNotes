@@ -1,3 +1,5 @@
+# To test these in VsCode just put print() around the whole code and press play. (Go line by line)
+
 'Hello, World!'.startswith('Hello') # Prints True because the string starts with Hello
 
 'abc123'.endswith('12') # Prints False because it ends with 23 not 12
@@ -10,7 +12,7 @@
 
 'MyABCnameABCisABCSimon'.split('ABC') # Creats a list, just removes ABC (if there were spaces, it would keep the spaces, because you specified a different delimiter)
 
-'Hello, world!'.partition('w') # This creates the Tuple ('Hello, ', 'w', 'orld!') seperates the strink w from everything else
+'Hello, world!'.partition('w') # This creates the Tuple ('Hello, ', 'w', 'orld!') seperates the string w from everything else
 # If the seperator string you pass occurs multiple times, then the first occurance appears.
 
 before, sep, after = 'Hello, world!'.partition(' ') # You can assign variables to the partitions, Before prints Hello, After prints world!, Sep prints the space
