@@ -4,7 +4,7 @@
 
 'abc123'.endswith('12') # Prints False because it ends with 23 not 12
 
-', '.join(['cats', 'rats', 'bats']) # Prints cats, rats, bats as a string
+', '.join(['cats', 'rats', 'bats']) # Prints cats, rats, bats as a string # Make sure when combining a variable, to make a new variable
 
 'ABC'.join(['My', 'name', 'is', 'Simon']) # Prints MyABCnameABCisABCSimon
 
@@ -16,6 +16,9 @@
 # If the seperator string you pass occurs multiple times, then the first occurance appears.
 
 before, sep, after = 'Hello, world!'.partition(' ') # You can assign variables to the partitions, Before prints Hello, After prints world!, Sep prints the space
+#print(before)
+#print(sep)
+#print(after)
 
 'Hello'.rjust(10) # Pushes hello 5 spaces to the right. The 10 is the total length + the string (.ljust will push 5 spaces to the left)
 
