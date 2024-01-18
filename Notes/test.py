@@ -1,6 +1,10 @@
 # Blank sheet for me to test things
 
-x = 3
-x -= 3
+print('Enter the English message to translate into Pig Latin:')
+message = input()
 
-print(x)
+Vowels = ('a', 'e', 'i', 'o', 'u', 'y')
+
+pigLatin = [] # A list of the words in Pig Latin
+for word in message.split():
+    print(word)

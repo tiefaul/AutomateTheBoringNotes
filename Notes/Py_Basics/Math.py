@@ -36,7 +36,7 @@ print(add - home * test)
 
 x = 10 # Initialize a variable
 
-x += 5 # Use the += operator to add a value to the variable
+x += 5 # Use the += operator to add a value to the variable (you can also do -= for subtraction)
 
 print(x)  # Output: 15
 
