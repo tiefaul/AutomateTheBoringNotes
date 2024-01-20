@@ -1,10 +1,6 @@
-# Blank sheet for me to test things
-word = 'This is a test'
+# This is a test file
 
-splitword = word.split()
+test = 'This is a test'
 
-print(splitword)
-
-splitword.append('Hi')
-
-print(splitword)
+center = test.center(20, '=')
+print(center)
