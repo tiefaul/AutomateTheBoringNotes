@@ -1,10 +1,10 @@
 # Blank sheet for me to test things
+word = 'This is a test'
 
-print('Enter the English message to translate into Pig Latin:')
-message = input()
+splitword = word.split()
 
-Vowels = ('a', 'e', 'i', 'o', 'u', 'y')
+print(splitword)
 
-pigLatin = [] # A list of the words in Pig Latin
-for word in message.split():
-    print(word)
+splitword.append('Hi')
+
+print(splitword)
