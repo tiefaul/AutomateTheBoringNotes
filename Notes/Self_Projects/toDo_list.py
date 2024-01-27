@@ -21,7 +21,7 @@ def toDo():
         if completed in toDo_list:
             toDo_list[completed] = 'X'
 
-        if completed == 'exit':
+        elif completed.lower() == 'exit':
             break
         
         elif completed not in toDo_list:
