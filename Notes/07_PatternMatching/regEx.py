@@ -17,3 +17,8 @@ print(mainNumber)
 pipe = re.compile(r'Batman|Spiderman') # this will match either batman or spiderman
 pipe1 = pipe.search('Batman or Spiderman') # searches for either batman or spiderman, whichever comes first will be what is printed.
 print(pipe1.group())
+
+theres = re.compile(r'The(re|ir|y\'re)') # how to specify a prefix 
+search = theres.search("They're in the trees")
+print(search.group())
+print(search.group(1)) # prints out matched text inside the first parentheses group
