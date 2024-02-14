@@ -65,4 +65,4 @@ num = number.search('Cell: 415-555-9999 Work: 123-456-7890')
 print(num.group())
 
 allnum = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
-print(allnum.findall('Cell: 415-555-9999 Work: 123-456-7890'))
+print(allnum.findall('Cell: 415-555-9999 Work: 123-456-7890')) # This can replace the search method and find every instance of what you want searched
