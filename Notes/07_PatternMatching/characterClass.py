@@ -1,6 +1,6 @@
 import re
 
-xmasRegex = re.compile(r'\d+\s\w+') # '\d+\s\w+' will match one or more numberic (\d+) followed by whitespace characters (\s) and then one or more letter/digit/underscore characters (\w+)
+xmasRegex = re.compile(r'\d+\s\w+') # '\d+\s\w+' will match one or more num eric (\d+) followed by whitespace characters (\s) and then one or more letter/digit/underscore characters (\w+)
 print(xmasRegex.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge'))
 
 print()
@@ -27,5 +27,36 @@ print(endsWithNumber.search('Your number is forty two.') == None)
 
 print()
 """Wild Card Character"""
-atRegex = re.compile(r'.at')
+atRegex = re.compile(r'.at') # looks for words that end in at 
 print(atRegex.findall('The cat in the hat sat on the flat mat'))
+
+print()
+"""Matching Everything with Dot-Star"""
+nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+mo = nameRegex.search('First Name: Tyler Last Name: Faulhaber')
+print(mo.group(1)) # Prints Tyler
+print(mo.group(2)) # Print Faulhaber
+
+"""Regex Symbols
+
+The ? matches zero or one of the preceding group.
+The * matches zero or more of the preceding group.
+The + matches one or more of the preceding group.
+The {n} matches exactly n of the preceding group.
+The {n,} matches n or more of the preceding group.
+The {,m} matches 0 to m of the preceding group.
+The {n,m} matches at least n and at most m of the preceding group.
+{n,m}? or *? or +? performs a non-greedy match of the preceding group.
+^spam means the string must begin with spam.
+spam$ means the string must end with spam.
+The . matches any character, except newline characters.
+\d, \w, and \s match a digit, word, or space character, respectively.
+\D, \W, and \S match anything except a digit, word, or space character, respectively.
+[abc] matches any character between the brackets (such as a, b, or c).
+[^abc] matches any character that isn’t between the brackets. """
+
+print()
+"""Case-Insensitive Matching"""
+robocop = re.compile(r'robocop', re.I) # re.I is for ignore cases.
+print(robocop.search('RoBoCop is part man, machine, and cop.'))
+
