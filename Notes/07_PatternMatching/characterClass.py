@@ -21,7 +21,7 @@ beginWithHello = re.compile(r'^Hello') # ^ at the start of the regex means that 
 print(beginWithHello.search('Hello, world!'))
 print(beginWithHello.search('He said hello.')== None) # True because 'hello' was not at the beginning.
 print()
-endsWithNumber = re.compile(r'\d$') # Dollar sign means "ends with" so it is looking for a digit at the end of the search
+endsWithNumber = re.compile(r'\d$') # Dollar sign means "ends with", so it is looking for a digit at the end of the search
 print(endsWithNumber.search('Your number is 42'))
 print(endsWithNumber.search('Your number is forty two.') == None)
 
