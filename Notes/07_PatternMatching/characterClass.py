@@ -39,6 +39,7 @@ print(mo.group(2)) # Print Faulhaber
 
 """Regex Symbols
 
+?: is a non-capturing group # Example \w+?:[.,?!] will not create a seperate group for these punctuation marks, but instead add it to the group that the punctuation is attached to
 The ? matches zero or one of the preceding group.
 The * matches zero or more of the preceding group.
 The + matches one or more of the preceding group.
