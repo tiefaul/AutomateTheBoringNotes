@@ -17,4 +17,4 @@ if __name__ == '__main__':
     if pw_detection(pw):
         print('Good, your password is strong!')
     else:
-        print('The password is at least eight characters long, contains both uppercase and lowercase characters, and at least one digit.')
+        print('The password is at least eight characters long, contains both uppercase and lowercase characters, and at least one digit.') 
